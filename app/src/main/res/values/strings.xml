@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppNavegationZero</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Goal" />
+    <string name="Hola" />
+    <string name="Caracola" />
+</resources>

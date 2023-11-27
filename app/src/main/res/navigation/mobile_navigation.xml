@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.alexblanco.appnavegationzero.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_holaFragment"
+            app:destination="@id/holaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/holaFragment"
+        android:name="com.alexblanco.appnavegationzero.HolaFragment"
+        android:label="HolaFragment" >
+        <action
+            android:id="@+id/action_holaFragment_to_caracolaFragment2"
+            app:destination="@id/caracolaFragment2"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_holaFragment_to_goalFragment2"
+            app:destination="@id/goalFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/caracolaFragment2"
+        android:name="com.alexblanco.appnavegationzero.CaracolaFragment"
+        android:label="CaracolaFragment" >
+        <action
+            android:id="@+id/action_caracolaFragment2_to_goalFragment2"
+            app:destination="@id/goalFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalFragment2"
+        android:name="com.alexblanco.appnavegationzero.GoalFragment"
+        android:label="GoalFragment" />
+</navigation>
